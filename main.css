@@ -1,0 +1,3756 @@
+
+
+@media (max-width:479px)
+{
+    .smallmenu {
+        
+        visibility: visible;
+        
+    }
+    .largemenu {
+        
+        visibility: hidden;
+        
+    }
+    .dummy
+    {
+    }
+    .titlesection
+    {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+    .container-main
+    {
+    }
+    .body
+    {
+        overflow-x: hidden;
+        clear: both;
+    }
+    .titlemenu
+    {
+        height: 50px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        border-radius: 0px 0px 2px 2px;
+        border-left: 1px solid #317F42;
+        border-right: 1px solid #317F42;
+        border-bottom: 1px solid #317F42;
+        background-color: #F9FBF9;
+    }
+    .fullheight
+    {
+        height: 100%;
+    }
+    .heading-large
+    {
+        font-size: 18pt;
+        margin-bottom: 20px;
+    }
+    .heading-superlarge
+    {
+        font-size: 20pt;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+    .heading-medium
+    {
+        font-size: 16pt;
+        margin-bottom: 20px;
+    }
+    .heading-small
+    {
+        font-size: 12pt;
+        margin-bottom: 10px;
+    }
+    .heading-secondary-large
+    {
+        font-size: 16pt;
+        margin-bottom: 10px;
+    }
+    .heading-secondary
+    {
+        font-size: 14pt;
+        margin-bottom: 10px;
+    }
+    .text-large
+    {
+        font-size: 14pt;
+    }
+    .text
+    {
+        font-size: 11pt;
+    }
+    .text-secondary-large
+    {
+        font-size: 12pt;
+    }
+    .text-secondary
+    {
+        font-size: 10pt;
+    }
+    .black-elkk
+    {
+        color: #515656;
+    }
+    .red-elkk
+    {
+        color: #CB373E;
+    }
+    .green-elkk
+    {
+        color: #317F42;
+    }
+    .center-horizontal
+    {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .center-vertical
+    {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .center-inner-text
+    {
+        text-align: center;
+    }
+    .text-weight-thin
+    {
+        font-weight: 300;
+    }
+    .text-weight-bold
+    {
+        font-weight: 500;
+    }
+    .titlemenu-height
+    {
+        height: 45px;
+    }
+    .titlename
+    {
+        line-height: 45px;
+    }
+    .logo
+    {
+        line-height: 45px;
+    }
+    .navitem
+    {
+        line-height: 45px;
+        text-align: center;
+    }
+    .navitem-border
+    {
+    }
+    .titleslogan
+    {
+        margin-bottom: 10px;
+        color: white;
+        text-shadow: 1px 0px 2px rgba(0, 0, 0, 1);
+        margin-top: 70px;
+        visibility: hidden;
+    }
+    .bt-special
+    {
+        background-color: #317F42;
+        color: white;
+        margin-top: 10px;
+    }
+    .navitem:hover
+    {
+        background-color: #317F42;
+        color: white;
+    }
+    .navitem:active
+    {
+        background-color: #317F42;
+        color: white;
+    }
+    .bt-special:hover
+    {
+        background-color: #363939;
+        color: white;
+    }
+    .specialsection
+    {
+    }
+    .background-gray
+    {
+        background-color: rgba(110, 115, 115, 0.05);
+    }
+    .background-green
+    {
+        background-color: rgba(49,127,66, 0.1);
+    }
+    .featuredeventsection
+    {
+    }
+    .featuredevent-date
+    {
+        background-image: url('iconmonstr-calendar-4-icon-256%20shopped.png');
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        height: 150px;
+        width: 150px;
+        background-size: 100%;
+        padding-top: 50px;
+    }
+    .featuredevent-date-day
+    {
+    }
+    .featuredevent-date-month
+    {
+    }
+    .featuredevent-date-time
+    {
+        font-size: 16pt;
+        margin-top: 10px;
+    }
+    .featuredevent-date-text
+    {
+        font-size: 30pt;
+        margin-bottom: -2px;
+    }
+    .featuredevent-date-location
+    {
+        font-size: 14pt;
+    }
+    .section-title
+    {
+        height: 50px;
+    }
+    .section-heading
+    {
+        letter-spacing: 2px;
+        font-weight: 400;
+        color: #CB373E;
+        font-size: 12pt;
+        height: 100%;
+        padding-top: 14px;
+    }
+    .section-column
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .section-text
+    {
+        line-height: 1.8em;
+    }
+    .featuredevent-heading
+    {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .featuredevent-text
+    {
+        margin-top: 30px;
+    }
+    .newsevent
+    {
+        border: 2px solid #eee;
+        margin-bottom: 20px;
+    }
+    .event-date
+    {
+        width: 100px;
+        height: 100px;
+        padding-top: 35px;
+        background-image: url('iconmonstr-calendar-4-icon-256%20shopped.png');
+        background-repeat: no-repeat;
+        background-position: 0;
+        background-size: 100%;
+    }
+    .event-date-day
+    {
+    }
+    .event-date-month
+    {
+    }
+    .event-date-time
+    {
+        font-size: 12pt;
+        padding-top: 5px;
+    }
+    .event-date-text
+    {
+        font-size: 14pt;
+        margin-bottom: 1px;
+    }
+    .event-date-location
+    {
+        font-size: 10pt;
+    }
+    .event-heading
+    {
+        color: #CB373E;
+    }
+    .event-text
+    {
+    }
+    .footer
+    {
+        background-color: #eee;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .footerline
+    {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .footerlink
+    {
+        text-decoration: none;
+        color: #317F42;
+    }
+    .footerlink:hover
+    {
+        color: black;
+        text-decoration: none;
+    }
+    .footerlink:link
+    {
+        color: #317F42;
+        text-decoration: none;
+    }
+    .footerlink:active
+    {
+        color: black;
+        text-decoration: none;
+    }
+    .section
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .section-heading-paragraph
+    {
+        border-bottom: 1px solid #363939;
+    }
+    .background-white
+    {
+        background-color: #F9FBF9;
+    }
+    .titlepicture-home
+    {
+        background-image: url('test.png');
+        height: 250px;
+        background-position: 0 20px;
+    }
+    .titlepicture-org
+    {
+        background-image: url('PastedGraphicPNG%20Kopie.png');
+        height: 170px;
+        background-size: 100%;
+    }
+    .org-column
+    {
+        margin-top: 86px;
+        background-color: rgba(255, 255, 255, 0.95);
+    }
+    .inpicture-heading
+    {
+        margin-bottom: 10px;
+    }
+    .org-vorstand-image
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .holgerdembek
+    {
+    }
+    .margin-top-little
+    {
+        margin-top: 5px;
+    }
+    .text-italic
+    {
+        font-style: italic;
+    }
+    .margin-top-narrow
+    {
+        margin-top: -5px;
+    }
+    .margin-top-narrower
+    {
+        margin-top: -10px;
+    }
+    .org-vorstand-img
+    {
+        border: 5px solid #eee;
+        height: 200px;
+        overflow: hidden;
+    }
+    .titlepicture-project
+    {
+        height: 200px;
+        background-image: url('mapkenya.png');
+        background-size: 100%;
+        background-position: 0 -280px;
+        background-repeat: no-repeat;
+    }
+    .picture-project
+    {
+        height: 350px;
+        background-image: url('elkkwebprojectsemilow.JPG');
+        background-position: 0;
+    }
+    .titlesection-special
+    {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-origin: content-box;
+    }
+    .project-column
+    {
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    .picture-streetkids
+    {
+        height: 250px;
+        background-image: url('P1040025.JPG');
+    }
+    .section-text-special
+    {
+        line-height: 1.5em;
+        margin-top: -10px;
+    }
+    .margin-top-more
+    {
+        margin-top: 20px;
+    }
+    .margin-bottom-more
+    {
+        margin-bottom: 20px;
+    }
+    .margin-top-lots
+    {
+        margin-top: 100px;
+    }
+    .picture-bizi
+    {
+    }
+    .bizi
+    {
+        border: 5px solid white;
+        margin-bottom: 15px;
+        margin-right: 15px;
+    }
+    .margin-bottom-lots
+    {
+        margin-bottom: 100px;
+    }
+    .margin-bottom-lot
+    {
+        margin-bottom: 50px;
+    }
+    .picture-support
+    {
+        height: 305px;
+        background-image: url('IMG_7685.JPG');
+        background-attachment: fixed;
+        background-position: 0 55px;
+    }
+    .support-submenu
+    {
+        height: 140px;
+    }
+    .support-submenu-link
+    {
+        height: 50%;
+        line-height: 70px;
+        text-align: center;
+        color: #317F42;
+        overflow: hidden;
+    }
+    .support-submenu-link a
+    {
+        text-decoration: none;
+        color: inherit;
+    }
+    .support-submenu-link:hover
+    {
+        background-color: #317F42;
+        color: white;
+        cursor: pointer;
+    }
+    .support-submenu-link a:hover
+    {
+        color: white;
+    }
+    .picture-contact
+    {
+        height: 200px;
+        background-image: url('elkkwebtitle2.JPG');
+        background-position: 0;
+    }
+    .margin-bottom-contact
+    {
+        margin-bottom: 200px;
+    }
+    .imagegallery-container
+    {
+        height: 150px;
+    }
+    .imagegallery-image
+    {
+        height: 150px;
+    }
+    .imagegallery-desc
+    {
+        height: 100px;
+    }
+    .imagegallery-bg
+    {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .imagegallery-bg-2
+    {
+        background-size: contain;
+        background-image: url('bizi.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .heading-no-margin-bottom
+    {
+        margin-bottom: 0;
+    }
+    .imagegallery-image-overlay
+    {
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        background-color: rgba(0, 0, 0, 0.4);
+        text-align: center;
+        line-height: 150px;
+        cursor: pointer;
+    }
+    .imagegallery-image-overlay-image
+    {
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+        width: 50px;
+        height: 50px;
+    }
+    .imagegallery-container:hover .imagegallery-image-overlay
+    {
+        visibility: visible;
+    }
+    .body-overlay
+    {
+        overflow: hidden;
+    }
+    .imagegallery-singleview-overlay
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 2;
+    }
+    .imagegallery-singleview
+    {
+        position: absolute;
+        min-width: 800px;
+        max-width: 100%;
+        min-height: 600px;
+        max-height: 100%;
+        top: 200px;
+    }
+    .imagegallery-singleview-albumnav
+    {
+        height: 60px;
+        padding-top: 10px;
+        padding-bottom: 60px;
+    }
+    .imagegallery-singleview-albumtitle
+    {
+        height: 70px;
+        line-height: 70px;
+        padding-left: 20px;
+    }
+    .imagegallery-singleview-image
+    {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 400px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .image-gallery-singleview-imagenav
+    {
+        height: 60px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .albumnav-prev
+    {
+        float: left;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .albumnav-next
+    {
+        float: right;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .imagenav-prev
+    {
+        float: left;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .imagenav-next
+    {
+        float: right;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .imagegallery-close
+    {
+        float: right;
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        margin-top: 5px;
+        background-image: url('iconmonstr-x-mark-icon-256.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    .imagegallery-singleview-albumtitle-paragraph
+    {
+        float: left;
+    }
+    .imagegallery-singleview-image img
+    {
+    }
+    .heading-no-margin-bottom-second
+    {
+        margin-bottom: 10px;
+    }
+    .rb-image
+    {
+        background-image: url('iconmonstr-text-file-3-icon-256.png');
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 25px;
+    }
+    .rb-name
+    {
+        text-align: center;
+    }
+    .quicknav
+    {
+    }
+    .quicknav-donateonline
+    {
+    }
+    .quicknav-normal
+    {
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+    }
+    .quicknav-normal a
+    {
+        color: #317F42;
+        text-decoration: none;
+    }
+    quicknav-normal a:hover
+    {
+        color: #363939;
+        text-decoration: none;
+    }
+    .bt-normal
+    {
+        border: 1px solid #363939;
+        margin-top: 10px;
+        background-color: #F9FBF9;
+    }
+    .bt-normal:hover
+    {
+        background-color: #F9FBF9;
+        border: 1px solid #317F42;
+        color: #317F42;
+    }
+    .quicknav-text
+    {
+        height: 150px;
+    }
+    .cms-topsection
+    {
+        height: 100px;
+    }
+    .text-center
+    {
+        text-align: center;
+    }
+}
+
+@media (min-width:480px) and (max-width:767px)
+{
+    .smallmenu {
+        
+        visibility: visible;
+        
+    }
+    .largemenu {
+        
+        visibility: hidden;
+        
+    }
+    .dummy
+    {
+    }
+    .titlesection
+    {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+    .container-main
+    {
+    }
+    .body
+    {
+        overflow-x: hidden;
+        clear: both;
+    }
+    .titlemenu
+    {
+        height: 50px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        border-radius: 0px 0px 2px 2px;
+        border-left: 1px solid #317F42;
+        border-right: 1px solid #317F42;
+        border-bottom: 1px solid #317F42;
+        background-color: #F9FBF9;
+    }
+    .fullheight
+    {
+        height: 100%;
+    }
+    .heading-large
+    {
+        font-size: 18pt;
+        margin-bottom: 20px;
+    }
+    .heading-superlarge
+    {
+        font-size: 20pt;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+    .heading-medium
+    {
+        font-size: 16pt;
+        margin-bottom: 20px;
+    }
+    .heading-small
+    {
+        font-size: 14pt;
+        margin-bottom: 10px;
+    }
+    .heading-secondary-large
+    {
+        font-size: 16pt;
+        margin-bottom: 10px;
+    }
+    .heading-secondary
+    {
+        font-size: 14pt;
+        margin-bottom: 10px;
+    }
+    .text-large
+    {
+        font-size: 14pt;
+    }
+    .text
+    {
+        font-size: 12pt;
+    }
+    .text-secondary-large
+    {
+        font-size: 12pt;
+    }
+    .text-secondary
+    {
+        font-size: 10pt;
+    }
+    .black-elkk
+    {
+        color: #515656;
+    }
+    .red-elkk
+    {
+        color: #CB373E;
+    }
+    .green-elkk
+    {
+        color: #317F42;
+    }
+    .center-horizontal
+    {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .center-vertical
+    {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .center-inner-text
+    {
+        text-align: center;
+    }
+    .text-weight-thin
+    {
+        font-weight: 300;
+    }
+    .text-weight-bold
+    {
+        font-weight: 500;
+    }
+    .titlemenu-height
+    {
+        height: 45px;
+    }
+    .titlename
+    {
+        line-height: 45px;
+    }
+    .logo
+    {
+        line-height: 45px;
+    }
+    .navitem
+    {
+        line-height: 45px;
+        text-align: center;
+    }
+    .navitem-border
+    {
+    }
+    .titleslogan
+    {
+        margin-bottom: 10px;
+        color: white;
+        text-shadow: 1px 0px 2px rgba(0, 0, 0, 1);
+        margin-top: 70px;
+        visibility: hidden;
+    }
+    .bt-special
+    {
+        background-color: #317F42;
+        color: white;
+        margin-top: 10px;
+    }
+    .navitem:hover
+    {
+        background-color: #317F42;
+        color: white;
+    }
+    .navitem:active
+    {
+        background-color: #317F42;
+        color: white;
+    }
+    .bt-special:hover
+    {
+        background-color: #363939;
+        color: white;
+    }
+    .specialsection
+    {
+    }
+    .background-gray
+    {
+        background-color: rgba(110, 115, 115, 0.05);
+    }
+    .background-green
+    {
+        background-color: rgba(49,127,66, 0.1);
+    }
+    .featuredeventsection
+    {
+    }
+    .featuredevent-date
+    {
+        background-image: url('iconmonstr-calendar-4-icon-256%20shopped.png');
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        height: 150px;
+        width: 150px;
+        background-size: 100%;
+        padding-top: 50px;
+    }
+    .featuredevent-date-day
+    {
+    }
+    .featuredevent-date-month
+    {
+    }
+    .featuredevent-date-time
+    {
+        font-size: 16pt;
+        margin-top: 10px;
+    }
+    .featuredevent-date-text
+    {
+        font-size: 30pt;
+        margin-bottom: -2px;
+    }
+    .featuredevent-date-location
+    {
+        font-size: 14pt;
+    }
+    .section-title
+    {
+        height: 50px;
+    }
+    .section-heading
+    {
+        letter-spacing: 2px;
+        font-weight: 400;
+        color: #CB373E;
+        font-size: 12pt;
+        height: 100%;
+        padding-top: 14px;
+    }
+    .section-column
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .section-text
+    {
+        line-height: 1.8em;
+    }
+    .featuredevent-heading
+    {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .featuredevent-text
+    {
+        margin-top: 30px;
+    }
+    .newsevent
+    {
+        border: 2px solid #eee;
+        margin-bottom: 20px;
+    }
+    .event-date
+    {
+        width: 100px;
+        height: 100px;
+        padding-top: 35px;
+        background-image: url('iconmonstr-calendar-4-icon-256%20shopped.png');
+        background-repeat: no-repeat;
+        background-position: 0;
+        background-size: 100%;
+    }
+    .event-date-day
+    {
+    }
+    .event-date-month
+    {
+    }
+    .event-date-time
+    {
+        font-size: 12pt;
+        padding-top: 5px;
+    }
+    .event-date-text
+    {
+        font-size: 14pt;
+        margin-bottom: 1px;
+    }
+    .event-date-location
+    {
+        font-size: 10pt;
+    }
+    .event-heading
+    {
+        color: #CB373E;
+    }
+    .event-text
+    {
+    }
+    .footer
+    {
+        background-color: #eee;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .footerline
+    {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .footerlink
+    {
+        text-decoration: none;
+        color: #317F42;
+    }
+    .footerlink:hover
+    {
+        color: black;
+        text-decoration: none;
+    }
+    .footerlink:link
+    {
+        color: #317F42;
+        text-decoration: none;
+    }
+    .footerlink:active
+    {
+        color: black;
+        text-decoration: none;
+    }
+    .section
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .section-heading-paragraph
+    {
+        border-bottom: 1px solid #363939;
+    }
+    .background-white
+    {
+        background-color: #F9FBF9;
+    }
+    .titlepicture-home
+    {
+        background-image: url('test.png');
+        height: 300px;
+    }
+    .titlepicture-org
+    {
+        background-image: url('PastedGraphicPNG%20Kopie.png');
+        height: 220px;
+        background-size: 100%;
+    }
+    .org-column
+    {
+        margin-top: 86px;
+        background-color: rgba(255, 255, 255, 0.95);
+    }
+    .inpicture-heading
+    {
+        margin-bottom: 10px;
+    }
+    .org-vorstand-image
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .holgerdembek
+    {
+    }
+    .margin-top-little
+    {
+        margin-top: 5px;
+    }
+    .text-italic
+    {
+        font-style: italic;
+    }
+    .margin-top-narrow
+    {
+        margin-top: -5px;
+    }
+    .margin-top-narrower
+    {
+        margin-top: -10px;
+    }
+    .org-vorstand-img
+    {
+        border: 5px solid #eee;
+    }
+    .titlepicture-project
+    {
+        height: 200px;
+        background-image: url('mapkenya.png');
+        background-size: 100%;
+        background-position: 0 -280px;
+        background-repeat: no-repeat;
+    }
+    .picture-project
+    {
+        height: 350px;
+        background-image: url('elkkwebprojectsemilow.JPG');
+        background-position: 0;
+    }
+    .project-column
+    {
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    .titlesection-special
+    {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-origin: content-box;
+    }
+    .picture-streetkids
+    {
+        height: 350px;
+        background-image: url('P1040025.JPG');
+    }
+    .section-text-special
+    {
+        line-height: 1.5em;
+        margin-top: -10px;
+    }
+    .margin-top-more
+    {
+        margin-top: 20px;
+    }
+    .margin-bottom-more
+    {
+        margin-bottom: 20px;
+    }
+    .margin-top-lots
+    {
+        margin-top: 100px;
+    }
+    .picture-bizi
+    {
+    }
+    .bizi
+    {
+        border: 5px solid white;
+        margin-bottom: 15px;
+        margin-right: 15px;
+    }
+    .margin-bottom-lots
+    {
+        margin-bottom: 100px;
+    }
+    .margin-bottom-lot
+    {
+        margin-bottom: 50px;
+    }
+    .picture-support
+    {
+        height: 370px;
+        background-image: url('IMG_7685.JPG');
+        background-attachment: fixed;
+        background-position: 0 20px;
+    }
+    .support-submenu
+    {
+        height: 140px;
+    }
+    .support-submenu-link
+    {
+        height: 50%;
+        line-height: 70px;
+        text-align: center;
+        color: #317F42;
+    }
+    .support-submenu-link a
+    {
+        text-decoration: none;
+        color: inherit;
+    }
+    .support-submenu-link:hover
+    {
+        background-color: #317F42;
+        color: white;
+        cursor: pointer;
+    }
+    .support-submenu-link a:hover
+    {
+        color: white;
+    }
+    .picture-contact
+    {
+        height: 300px;
+        background-image: url('elkkwebtitle2.JPG');
+    }
+    .margin-bottom-contact
+    {
+        margin-bottom: 200px;
+    }
+    .imagegallery-container
+    {
+        height: 150px;
+    }
+    .imagegallery-image
+    {
+        height: 150px;
+    }
+    .imagegallery-desc
+    {
+        height: 100px;
+    }
+    .imagegallery-bg
+    {
+        background-image: url('P1040025.JPG');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .imagegallery-bg-2
+    {
+        background-size: contain;
+        background-image: url('bizi.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .heading-no-margin-bottom
+    {
+        margin-bottom: 0;
+    }
+    .imagegallery-image-overlay
+    {
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        background-color: rgba(0, 0, 0, 0.4);
+        text-align: center;
+        line-height: 150px;
+        cursor: pointer;
+    }
+    .imagegallery-image-overlay-image
+    {
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+        width: 50px;
+        height: 50px;
+    }
+    .imagegallery-container:hover .imagegallery-image-overlay
+    {
+        visibility: visible;
+    }
+    .body-overlay
+    {
+        overflow: hidden;
+    }
+    .imagegallery-singleview-overlay
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 2;
+    }
+    .imagegallery-singleview
+    {
+        position: absolute;
+        min-width: 800px;
+        max-width: 100%;
+        min-height: 600px;
+        max-height: 100%;
+        top: 200px;
+    }
+    .imagegallery-singleview-albumnav
+    {
+        height: 60px;
+        padding-top: 10px;
+        padding-bottom: 60px;
+    }
+    .imagegallery-singleview-albumtitle
+    {
+        height: 70px;
+        line-height: 70px;
+        padding-left: 20px;
+    }
+    .imagegallery-singleview-image
+    {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 400px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .image-gallery-singleview-imagenav
+    {
+        height: 60px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .albumnav-prev
+    {
+        float: left;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .albumnav-next
+    {
+        float: right;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .imagenav-prev
+    {
+        float: left;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .imagenav-next
+    {
+        float: right;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .imagegallery-close
+    {
+        float: right;
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        margin-top: 5px;
+        background-image: url('iconmonstr-x-mark-icon-256.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    .imagegallery-singleview-albumtitle-paragraph
+    {
+        float: left;
+    }
+    .imagegallery-singleview-image img
+    {
+    }
+    .heading-no-margin-bottom-second
+    {
+        margin-bottom: 10px;
+    }
+    .rb-image
+    {
+        background-image: url('iconmonstr-text-file-3-icon-256.png');
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 25px;
+    }
+    .rb-name
+    {
+        text-align: center;
+    }
+    .quicknav
+    {
+    }
+    .quicknav-donateonline
+    {
+    }
+    .quicknav-normal
+    {
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+    }
+    .quicknav-normal a
+    {
+        color: #317F42;
+        text-decoration: none;
+    }
+    quicknav-normal a:hover
+    {
+        color: #363939;
+        text-decoration: none;
+    }
+    .bt-normal
+    {
+        border: 1px solid #363939;
+        margin-top: 10px;
+        background-color: #F9FBF9;
+    }
+    .bt-normal:hover
+    {
+        background-color: #F9FBF9;
+        border: 1px solid #317F42;
+        color: #317F42;
+    }
+    .quicknav-text
+    {
+    }
+    .cms-topsection
+    {
+        height: 100px;
+    }
+    .text-center
+    {
+        text-align: center;
+    }
+    .nav-hamburger
+    {
+        background-image: url('iconmonstr-menu-3-icon-256.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 30px 30px;
+    }
+    .container-titleslogan
+    {
+        
+    }
+    .section-titleslogan
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 12pt;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px)
+{
+    .smallmenu {
+        
+        visibility: hidden;
+        
+    }
+    .largemenu {
+        
+        visibility: visible;
+        
+    }
+    .dummy
+    {
+    }
+    .titlesection
+    {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+    .container-main
+    {
+    }
+    .body
+    {
+        overflow-x: hidden;
+        clear: both;
+    }
+    .titlemenu
+    {
+        height: 38px;
+        border-radius: 0px 0px 2px 2px;
+        border-left: 1px solid #317F42;
+        border-right: 1px solid #317F42;
+        border-bottom: 1px solid #317F42;
+        background-color: #F9FBF9;
+    }
+    .fullheight
+    {
+        height: 100%;
+    }
+    .heading-large
+    {
+        font-size: 18pt;
+        margin-bottom: 20px;
+    }
+    .heading-superlarge
+    {
+        font-size: 20pt;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+    .heading-medium
+    {
+        font-size: 13pt;
+        margin-bottom: 20px;
+    }
+    .heading-small
+    {
+        font-size: 12pt;
+        margin-bottom: 10px;
+    }
+    .heading-secondary-large
+    {
+        font-size: 16pt;
+        margin-bottom: 10px;
+    }
+    .heading-secondary
+    {
+        font-size: 14pt;
+        margin-bottom: 10px;
+    }
+    .text-large
+    {
+        font-size: 12pt;
+    }
+    .text
+    {
+        font-size: 10pt;
+    }
+    .text-secondary-large
+    {
+        font-size: 12pt;
+    }
+    .text-secondary
+    {
+        font-size: 10pt;
+    }
+    .black-elkk
+    {
+        color: #515656;
+    }
+    .red-elkk
+    {
+        color: #CB373E;
+    }
+    .green-elkk
+    {
+        color: #317F42;
+    }
+    .center-horizontal
+    {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .center-vertical
+    {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .center-inner-text
+    {
+        text-align: center;
+    }
+    .text-weight-thin
+    {
+        font-weight: 300;
+    }
+    .text-weight-bold
+    {
+        font-weight: 500;
+    }
+    .titlemenu-height
+    {
+        height: 45px;
+    }
+    .titlename
+    {
+        line-height: 45px;
+    }
+    .logo
+    {
+        line-height: 45px;
+    }
+    .navitem
+    {
+        line-height: 35px;
+        text-align: center;
+    }
+    .navitem-border
+    {
+    }
+    .titleslogan
+    {
+        margin-bottom: 10px;
+        color: white;
+        text-shadow: 1px 0px 2px rgba(0, 0, 0, 1);
+        margin-top: 55px;
+    }
+    .bt-special
+    {
+        background-color: #317F42;
+        color: white;
+        margin-top: 10px;
+    }
+    .navitem:hover
+    {
+        background-color: #317F42;
+        color: white;
+    }
+    .navitem:active
+    {
+        background-color: #317F42;
+        color: white;
+    }
+    .bt-special:hover
+    {
+        background-color: #363939;
+        color: white;
+    }
+    .specialsection
+    {
+    }
+    .background-gray
+    {
+        background-color: rgba(110, 115, 115, 0.05);
+    }
+    .background-green
+    {
+        background-color: rgba(49,127,66, 0.1);
+    }
+    .featuredeventsection
+    {
+    }
+    .featuredevent-date
+    {
+        background-image: url('iconmonstr-calendar-4-icon-256%20shopped.png');
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        height: 150px;
+        width: 150px;
+        background-size: 100%;
+        padding-top: 50px;
+    }
+    .featuredevent-date-day
+    {
+    }
+    .featuredevent-date-month
+    {
+    }
+    .featuredevent-date-time
+    {
+        font-size: 12pt;
+        margin-top: 10px;
+    }
+    .featuredevent-date-text
+    {
+        font-size: 20pt;
+        margin-top: 5px;
+    }
+    .featuredevent-date-location
+    {
+        font-size: 12pt;
+    }
+    .section-title
+    {
+        height: 50px;
+    }
+    .section-heading
+    {
+        letter-spacing: 2px;
+        font-weight: 400;
+        color: #CB373E;
+        font-size: 12pt;
+        height: 100%;
+        padding-top: 14px;
+    }
+    .section-column
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .section-text
+    {
+        line-height: 1.8em;
+    }
+    .featuredevent-heading
+    {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .featuredevent-text
+    {
+        margin-top: 30px;
+    }
+    .newsevent
+    {
+        border: 2px solid #eee;
+        margin-bottom: 20px;
+    }
+    .event-date
+    {
+        width: 100px;
+        height: 100px;
+        padding-top: 35px;
+        background-image: url('iconmonstr-calendar-4-icon-256%20shopped.png');
+        background-repeat: no-repeat;
+        background-position: 0;
+        background-size: 100%;
+    }
+    .event-date-day
+    {
+    }
+    .event-date-month
+    {
+    }
+    .event-date-time
+    {
+        font-size: 12pt;
+        padding-top: 5px;
+    }
+    .event-date-text
+    {
+        font-size: 14pt;
+        margin-bottom: 1px;
+    }
+    .event-date-location
+    {
+        font-size: 10pt;
+    }
+    .event-heading
+    {
+        color: #CB373E;
+    }
+    .event-text
+    {
+    }
+    .footer
+    {
+        background-color: #eee;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .footerline
+    {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .footerlink
+    {
+        text-decoration: none;
+        color: #317F42;
+    }
+    .footerlink:hover
+    {
+        color: black;
+        text-decoration: none;
+    }
+    .footerlink:link
+    {
+        color: #317F42;
+        text-decoration: none;
+    }
+    .footerlink:active
+    {
+        color: black;
+        text-decoration: none;
+    }
+    .section
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .section-heading-paragraph
+    {
+        border-bottom: 1px solid #363939;
+    }
+    .background-white
+    {
+        background-color: #F9FBF9;
+    }
+    .titlepicture-home
+    {
+        background-image: url('test.png');
+        height: 500px;
+    }
+    .titlepicture-org
+    {
+        background-image: url('PastedGraphicPNG%20Kopie.png');
+        height: 350px;
+        background-size: 100%;
+    }
+    .org-column
+    {
+        margin-top: 86px;
+        background-color: rgba(255, 255, 255, 0.95);
+    }
+    .inpicture-heading
+    {
+        margin-bottom: 10px;
+    }
+    .org-vorstand-image
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .holgerdembek
+    {
+    }
+    .margin-top-little
+    {
+        margin-top: 5px;
+    }
+    .text-italic
+    {
+        font-style: italic;
+    }
+    .margin-top-narrow
+    {
+        margin-top: -5px;
+    }
+    .margin-top-narrower
+    {
+        margin-top: -10px;
+    }
+    .org-vorstand-img
+    {
+        border: 5px solid #eee;
+    }
+    .titlepicture-project
+    {
+        height: 200px;
+        background-image: url('mapkenya.png');
+        background-size: 100%;
+        background-position: 0 -280px;
+        background-repeat: no-repeat;
+    }
+    .picture-project
+    {
+        height: 350px;
+        background-image: url('elkkwebprojectsemilow.JPG');
+        background-position: 0;
+    }
+    .titlesection-special
+    {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-origin: content-box;
+    }
+    .project-column
+    {
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    .picture-streetkids
+    {
+        height: 350px;
+        background-image: url('P1040025.JPG');
+        background-position: 0 -110px;
+    }
+    .section-text-special
+    {
+        line-height: 1.5em;
+        margin-top: -10px;
+    }
+    .margin-top-more
+    {
+        margin-top: 20px;
+    }
+    .margin-bottom-more
+    {
+        margin-bottom: 20px;
+    }
+    .margin-top-lots
+    {
+        margin-top: 100px;
+    }
+    .picture-bizi
+    {
+    }
+    .bizi
+    {
+        border: 5px solid white;
+        margin-bottom: 15px;
+        margin-right: 15px;
+    }
+    .margin-bottom-lots
+    {
+        margin-bottom: 100px;
+    }
+    .margin-bottom-lot
+    {
+        margin-bottom: 50px;
+    }
+    .picture-support
+    {
+        height: 550px;
+        background-image: url('IMG_7685.JPG');
+        background-attachment: fixed;
+    }
+    .support-submenu
+    {
+        height: 70px;
+    }
+    .support-submenu-link
+    {
+        height: 100%;
+        line-height: 70px;
+        text-align: center;
+        color: #317F42;
+    }
+    .support-submenu-link a
+    {
+        text-decoration: none;
+        color: inherit;
+    }
+    .support-submenu-link:hover
+    {
+        background-color: #317F42;
+        color: white;
+        cursor: pointer;
+    }
+    .support-submenu-link a:hover
+    {
+        color: white;
+    }
+    .picture-contact
+    {
+        height: 400px;
+        background-image: url('elkkwebtitle2.JPG');
+        background-position: 0 -100px;
+    }
+    .margin-bottom-contact
+    {
+        margin-bottom: 200px;
+    }
+    .imagegallery-container
+    {
+        height: 150px;
+    }
+    .imagegallery-image
+    {
+        height: 150px;
+    }
+    .imagegallery-desc
+    {
+        height: 100px;
+    }
+    .imagegallery-bg
+    {
+        background-image: url('P1040025.JPG');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .imagegallery-bg-2
+    {
+        background-size: contain;
+        background-image: url('bizi.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .heading-no-margin-bottom
+    {
+        margin-bottom: 0;
+    }
+    .imagegallery-image-overlay
+    {
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        background-color: rgba(0, 0, 0, 0.4);
+        text-align: center;
+        line-height: 150px;
+        cursor: pointer;
+    }
+    .imagegallery-image-overlay-image
+    {
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+        width: 50px;
+        height: 50px;
+    }
+    .imagegallery-container:hover .imagegallery-image-overlay
+    {
+        visibility: visible;
+    }
+    .body-overlay
+    {
+        overflow: hidden;
+    }
+    .imagegallery-singleview-overlay
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 2;
+    }
+    .imagegallery-singleview
+    {
+        position: absolute;
+        min-width: 800px;
+        max-width: 100%;
+        min-height: 600px;
+        max-height: 100%;
+        top: 200px;
+    }
+    .imagegallery-singleview-albumnav
+    {
+        height: 60px;
+        padding-top: 10px;
+        padding-bottom: 60px;
+    }
+    .imagegallery-singleview-albumtitle
+    {
+        height: 70px;
+        line-height: 70px;
+        padding-left: 20px;
+    }
+    .imagegallery-singleview-image
+    {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 400px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .image-gallery-singleview-imagenav
+    {
+        height: 60px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .albumnav-prev
+    {
+        float: left;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .albumnav-next
+    {
+        float: right;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .imagenav-prev
+    {
+        float: left;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .imagenav-next
+    {
+        float: right;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .imagegallery-close
+    {
+        float: right;
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        margin-top: 5px;
+        background-image: url('iconmonstr-x-mark-icon-256.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    .imagegallery-singleview-albumtitle-paragraph
+    {
+        float: left;
+    }
+    .imagegallery-singleview-image img
+    {
+    }
+    .heading-no-margin-bottom-second
+    {
+        margin-bottom: 10px;
+    }
+    .rb-image
+    {
+        background-image: url('iconmonstr-text-file-3-icon-256.png');
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 25px;
+    }
+    .rb-name
+    {
+        text-align: center;
+    }
+    .quicknav
+    {
+    }
+    .quicknav-donateonline
+    {
+    }
+    .quicknav-normal
+    {
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+    }
+    .quicknav-normal a
+    {
+        color: #317F42;
+        text-decoration: none;
+    }
+    quicknav-normal a:hover
+    {
+        color: #363939;
+        text-decoration: none;
+    }
+    .bt-normal
+    {
+        border: 1px solid #363939;
+        margin-top: 10px;
+        background-color: #F9FBF9;
+    }
+    .bt-normal:hover
+    {
+        background-color: #F9FBF9;
+        border: 1px solid #317F42;
+        color: #317F42;
+    }
+    .quicknav-text
+    {
+    }
+    .cms-topsection
+    {
+        height: 100px;
+    }
+    .text-center
+    {
+        text-align: center;
+    }
+    .nav-hamburger
+    {
+        background-image: url('iconmonstr-menu-3-icon-256.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 30px 30px;
+        visibility: hidden;
+        height: 0px;
+    }
+    .container-titleslogan
+    {
+    
+    }
+    .section-titleslogan
+    {
+        font-size: 12pt;
+        visibility: hidden;
+        height: 0;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px)
+{
+    .smallmenu {
+        
+        visibility: hidden;
+        
+    }
+    .largemenu {
+        
+        visibility: visible;
+        
+    }
+    .dummy
+    {
+    }
+    .titlesection
+    {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+    .container-main
+    {
+    }
+    .body
+    {
+        overflow-x: hidden;
+        clear: both;
+    }
+    .titlemenu
+    {
+        height: 40px;
+        border-radius: 0px 0px 2px 2px;
+        border-left: 1px solid #317F42;
+        border-right: 1px solid #317F42;
+        border-bottom: 1px solid #317F42;
+        background-color: #F9FBF9;
+    }
+    .fullheight
+    {
+        height: 100%;
+    }
+    .heading-large
+    {
+        font-size: 18pt;
+        margin-bottom: 20px;
+    }
+    .heading-superlarge
+    {
+        font-size: 20pt;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+    .heading-medium
+    {
+        font-size: 16pt;
+        margin-bottom: 20px;
+    }
+    .heading-small
+    {
+        font-size: 14pt;
+        margin-bottom: 10px;
+    }
+    .heading-secondary-large
+    {
+        font-size: 16pt;
+        margin-bottom: 10px;
+    }
+    .heading-secondary
+    {
+        font-size: 14pt;
+        margin-bottom: 10px;
+    }
+    .text-large
+    {
+        font-size: 14pt;
+    }
+    .text
+    {
+        font-size: 12pt;
+    }
+    .text-secondary-large
+    {
+        font-size: 12pt;
+    }
+    .text-secondary
+    {
+        font-size: 10pt;
+    }
+    .black-elkk
+    {
+        color: #515656;
+    }
+    .red-elkk
+    {
+        color: #CB373E;
+    }
+    .green-elkk
+    {
+        color: #317F42;
+    }
+    .center-horizontal
+    {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .center-vertical
+    {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .center-inner-text
+    {
+        text-align: center;
+    }
+    .text-weight-thin
+    {
+        font-weight: 300;
+    }
+    .text-weight-bold
+    {
+        font-weight: 500;
+    }
+    .titlemenu-height
+    {
+        height: 45px;
+    }
+    .titlename
+    {
+        line-height: 45px;
+    }
+    .logo
+    {
+        line-height: 45px;
+    }
+    .navitem
+    {
+        line-height: 37px;
+        text-align: center;
+        height: 37px;
+    }
+    .navitem-border
+    {
+    }
+    .titleslogan
+    {
+        margin-bottom: 10px;
+        color: white;
+        text-shadow: 1px 0px 2px rgba(0, 0, 0, 1);
+        margin-top: 70px;
+    }
+    .bt-special
+    {
+        background-color: #317F42;
+        color: white;
+        margin-top: 10px;
+    }
+    .navitem:hover
+    {
+        background-color: #317F42;
+        color: white;
+    }
+    .navitem:active
+    {
+        background-color: #317F42;
+        color: white;
+    }
+    .bt-special:hover
+    {
+        background-color: #363939;
+        color: white;
+    }
+    .specialsection
+    {
+    }
+    .background-gray
+    {
+        background-color: rgba(110, 115, 115, 0.05);
+    }
+    .background-green
+    {
+        background-color: rgba(49,127,66, 0.1);
+    }
+    .featuredeventsection
+    {
+    }
+    .featuredevent-date
+    {
+        background-image: url('iconmonstr-calendar-4-icon-256%20shopped.png');
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        height: 150px;
+        width: 150px;
+        background-size: 100%;
+        padding-top: 50px;
+    }
+    .featuredevent-date-day
+    {
+    }
+    .featuredevent-date-month
+    {
+    }
+    .featuredevent-date-time
+    {
+        font-size: 16pt;
+        margin-top: 10px;
+    }
+    .featuredevent-date-text
+    {
+        font-size: 30pt;
+        margin-bottom: -2px;
+    }
+    .featuredevent-date-location
+    {
+        font-size: 14pt;
+    }
+    .section-title
+    {
+        height: 50px;
+    }
+    .section-heading
+    {
+        letter-spacing: 2px;
+        font-weight: 400;
+        color: #CB373E;
+        font-size: 12pt;
+        height: 100%;
+        padding-top: 14px;
+    }
+    .section-column
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .section-text
+    {
+        line-height: 1.8em;
+    }
+    .featuredevent-heading
+    {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .featuredevent-text
+    {
+        margin-top: 30px;
+    }
+    .newsevent
+    {
+        border: 2px solid #eee;
+        margin-bottom: 20px;
+    }
+    .event-date
+    {
+        width: 100px;
+        height: 100px;
+        padding-top: 35px;
+        background-image: url('iconmonstr-calendar-4-icon-256%20shopped.png');
+        background-repeat: no-repeat;
+        background-position: 0;
+        background-size: 100%;
+    }
+    .event-date-day
+    {
+    }
+    .event-date-month
+    {
+    }
+    .event-date-time
+    {
+        font-size: 12pt;
+        padding-top: 5px;
+    }
+    .event-date-text
+    {
+        font-size: 14pt;
+        margin-bottom: 1px;
+    }
+    .event-date-location
+    {
+        font-size: 10pt;
+    }
+    .event-heading
+    {
+        color: #CB373E;
+    }
+    .event-text
+    {
+    }
+    .footer
+    {
+        background-color: #eee;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .footerline
+    {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .footerlink
+    {
+        text-decoration: none;
+        color: #317F42;
+    }
+    .footerlink:hover
+    {
+        color: black;
+        text-decoration: none;
+    }
+    .footerlink:link
+    {
+        color: #317F42;
+        text-decoration: none;
+    }
+    .footerlink:active
+    {
+        color: black;
+        text-decoration: none;
+    }
+    .section
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .section-heading-paragraph
+    {
+        border-bottom: 1px solid #363939;
+    }
+    .background-white
+    {
+        background-color: #F9FBF9;
+    }
+    .titlepicture-home
+    {
+        background-image: url('test.png');
+        height: 600px;
+    }
+    .titlepicture-org
+    {
+        background-image: url('PastedGraphicPNG%20Kopie.png');
+        height: 450px;
+        background-size: 100%;
+    }
+    .org-column
+    {
+        margin-top: 86px;
+        background-color: rgba(255, 255, 255, 0.95);
+    }
+    .inpicture-heading
+    {
+        margin-bottom: 10px;
+    }
+    .org-vorstand-image
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .holgerdembek
+    {
+    }
+    .margin-top-little
+    {
+        margin-top: 5px;
+    }
+    .text-italic
+    {
+        font-style: italic;
+    }
+    .margin-top-narrow
+    {
+        margin-top: -5px;
+    }
+    .margin-top-narrower
+    {
+        margin-top: -10px;
+    }
+    .org-vorstand-img
+    {
+        border: 5px solid #eee;
+    }
+    .titlepicture-project
+    {
+        height: 200px;
+        background-image: url('mapkenya.png');
+        background-size: 100%;
+        background-position: 0 -280px;
+        background-repeat: no-repeat;
+    }
+    .picture-project
+    {
+        height: 350px;
+        background-image: url('elkkwebprojectsemilow.JPG');
+        background-position: 0;
+    }
+    .titlesection-special
+    {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-origin: content-box;
+    }
+    .project-column
+    {
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    .picture-streetkids
+    {
+        height: 350px;
+        background-image: url('P1040025.JPG');
+        background-position: 0 -110px;
+    }
+    .section-text-special
+    {
+        line-height: 1.5em;
+        margin-top: -10px;
+    }
+    .margin-top-more
+    {
+        margin-top: 20px;
+    }
+    .margin-bottom-more
+    {
+        margin-bottom: 20px;
+    }
+    .margin-top-lots
+    {
+        margin-top: 100px;
+    }
+    .picture-bizi
+    {
+    }
+    .bizi
+    {
+        border: 5px solid white;
+        margin-bottom: 15px;
+        margin-right: 15px;
+    }
+    .margin-bottom-lots
+    {
+        margin-bottom: 100px;
+    }
+    .margin-bottom-lot
+    {
+        margin-bottom: 50px;
+    }
+    .picture-support
+    {
+        height: 650px;
+        background-image: url('IMG_7685.JPG');
+        background-attachment: fixed;
+    }
+    .support-submenu
+    {
+        height: 70px;
+    }
+    .support-submenu-link
+    {
+        height: 100%;
+        line-height: 70px;
+        text-align: center;
+        color: #317F42;
+    }
+    .support-submenu-link a
+    {
+        text-decoration: none;
+        color: inherit;
+    }
+    .support-submenu-link:hover
+    {
+        background-color: #317F42;
+        color: white;
+        cursor: pointer;
+    }
+    .support-submenu-link a:hover
+    {
+        color: white;
+    }
+    .picture-contact
+    {
+        height: 550px;
+        background-image: url('elkkwebtitle2.JPG');
+        background-position: 0 -100px;
+    }
+    .margin-bottom-contact
+    {
+        margin-bottom: 200px;
+    }
+    .imagegallery-container
+    {
+        height: 150px;
+    }
+    .imagegallery-image
+    {
+        height: 150px;
+    }
+    .imagegallery-desc
+    {
+        height: 100px;
+    }
+    .imagegallery-bg
+    {
+        background-image: url('P1040025.JPG');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .imagegallery-bg-2
+    {
+        background-size: contain;
+        background-image: url('bizi.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .heading-no-margin-bottom
+    {
+        margin-bottom: 0;
+    }
+    .imagegallery-image-overlay
+    {
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        background-color: rgba(0, 0, 0, 0.4);
+        text-align: center;
+        line-height: 150px;
+        cursor: pointer;
+    }
+    .imagegallery-image-overlay-image
+    {
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+        width: 50px;
+        height: 50px;
+    }
+    .imagegallery-container:hover .imagegallery-image-overlay
+    {
+        visibility: visible;
+    }
+    .body-overlay
+    {
+        overflow: hidden;
+    }
+    .imagegallery-singleview-overlay
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 2;
+    }
+    .imagegallery-singleview
+    {
+        position: absolute;
+        min-width: 800px;
+        max-width: 100%;
+        min-height: 600px;
+        max-height: 100%;
+        top: 200px;
+    }
+    .imagegallery-singleview-albumnav
+    {
+        height: 60px;
+        padding-top: 10px;
+        padding-bottom: 60px;
+    }
+    .imagegallery-singleview-albumtitle
+    {
+        height: 70px;
+        line-height: 70px;
+        padding-left: 20px;
+    }
+    .imagegallery-singleview-image
+    {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 400px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .image-gallery-singleview-imagenav
+    {
+        height: 60px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .albumnav-prev
+    {
+        float: left;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .albumnav-next
+    {
+        float: right;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .imagenav-prev
+    {
+        float: left;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .imagenav-next
+    {
+        float: right;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .imagegallery-close
+    {
+        float: right;
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        margin-top: 5px;
+        background-image: url('iconmonstr-x-mark-icon-256.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    .imagegallery-singleview-albumtitle-paragraph
+    {
+        float: left;
+    }
+    .imagegallery-singleview-image img
+    {
+    }
+    .heading-no-margin-bottom-second
+    {
+        margin-bottom: 10px;
+    }
+    .rb-image
+    {
+        background-image: url('iconmonstr-text-file-3-icon-256.png');
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 25px;
+    }
+    .rb-name
+    {
+        text-align: center;
+    }
+    .quicknav
+    {
+    }
+    .quicknav-donateonline
+    {
+    }
+    .quicknav-normal
+    {
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+    }
+    .quicknav-normal a
+    {
+        color: #317F42;
+        text-decoration: none;
+    }
+    quicknav-normal a:hover
+    {
+        color: #363939;
+        text-decoration: none;
+    }
+    .bt-normal
+    {
+        border: 1px solid #363939;
+        margin-top: 10px;
+        background-color: #F9FBF9;
+    }
+    .bt-normal:hover
+    {
+        background-color: #F9FBF9;
+        border: 1px solid #317F42;
+        color: #317F42;
+    }
+    .quicknav-text
+    {
+        height: 150px;
+    }
+    .cms-topsection
+    {
+        height: 100px;
+    }
+    .text-center
+    {
+        text-align: center;
+    }
+    .nav-hamburger
+    {
+        background-image: url('iconmonstr-menu-3-icon-256.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 30px 30px;
+        visibility: hidden;
+        height: 0px;
+    }
+    .container-titleslogan
+    {
+    }
+    .section-titleslogan
+    {
+        font-size: 12pt;
+        visibility: hidden;
+        height: 0;
+    }
+    .div-hamburger
+    {
+        height: 0px;
+    }
+    .nomargin
+    {
+        padding-left: 0;
+        margin: 0;
+        padding-right: 0;
+    }
+    .container-titleslogan
+    {
+        height: 0px;
+        visibility: hidden;
+    }
+}
+
+@media (min-width:1200px)
+{
+    .smallmenu {
+        
+        visibility: hidden;
+        
+    }
+    .largemenu {
+        
+        visibility: visible;
+        
+    }
+    .dummy
+    {
+    }
+    .titlesection
+    {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+    .container-main
+    {
+    }
+    .body
+    {
+        overflow-x: hidden;
+        clear: both;
+    }
+    .titlemenu
+    {
+        height: 48px;
+        border-radius: 0px 0px 2px 2px;
+        border-left: 1px solid #317F42;
+        border-right: 1px solid #317F42;
+        border-bottom: 1px solid #317F42;
+        background-color: #F9FBF9;
+    }
+    .fullheight
+    {
+        height: 100%;
+    }
+    .heading-large
+    {
+        font-size: 18pt;
+        margin-bottom: 20px;
+    }
+    .heading-superlarge
+    {
+        font-size: 20pt;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+    .heading-medium
+    {
+        font-size: 16pt;
+        margin-bottom: 20px;
+    }
+    .heading-small
+    {
+        font-size: 14pt;
+        margin-bottom: 10px;
+    }
+    .heading-secondary-large
+    {
+        font-size: 16pt;
+        margin-bottom: 10px;
+    }
+    .heading-secondary
+    {
+        font-size: 14pt;
+        margin-bottom: 10px;
+    }
+    .text-large
+    {
+        font-size: 14pt;
+    }
+    .text
+    {
+        font-size: 12pt;
+    }
+    .text-secondary-large
+    {
+        font-size: 12pt;
+    }
+    .text-secondary
+    {
+        font-size: 10pt;
+    }
+    .black-elkk
+    {
+        color: #515656;
+    }
+    .red-elkk
+    {
+        color: #CB373E;
+    }
+    .green-elkk
+    {
+        color: #317F42;
+    }
+    .center-horizontal
+    {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .center-vertical
+    {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .center-inner-text
+    {
+        text-align: center;
+    }
+    .text-weight-thin
+    {
+        font-weight: 300;
+    }
+    .text-weight-bold
+    {
+        font-weight: 500;
+    }
+    .titlemenu-height
+    {
+        height: 45px;
+    }
+    .titlename
+    {
+        line-height: 45px;
+    }
+    .logo
+    {
+        line-height: 45px;
+    }
+    .navitem
+    {
+        line-height: 45px;
+        text-align: center;
+    }
+    .navitem-border
+    {
+    }
+    .titleslogan
+    {
+        margin-bottom: 10px;
+        color: white;
+        text-shadow: 1px 0px 2px rgba(0, 0, 0, 1);
+        margin-top: 95px;
+    }
+    .bt-special
+    {
+        background-color: #317F42;
+        color: white;
+        margin-top: 10px;
+    }
+    .navitem:hover
+    {
+        background-color: #317F42;
+        color: white;
+    }
+    .navitem:active
+    {
+        background-color: #317F42;
+        color: white;
+    }
+    .bt-special:hover
+    {
+        background-color: #363939;
+        color: white;
+    }
+    .specialsection
+    {
+    }
+    .background-gray
+    {
+        background-color: rgba(110, 115, 115, 0.05);
+    }
+    .background-green
+    {
+        background-color: rgba(49,127,66, 0.1);
+    }
+    .featuredeventsection
+    {
+    }
+    .featuredevent-date
+    {
+        background-image: url('iconmonstr-calendar-4-icon-256%20shopped.png');
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        height: 150px;
+        width: 150px;
+        background-size: 100%;
+        padding-top: 50px;
+    }
+    .featuredevent-date-day
+    {
+    }
+    .featuredevent-date-month
+    {
+    }
+    .featuredevent-date-time
+    {
+        font-size: 16pt;
+        margin-top: 10px;
+    }
+    .featuredevent-date-text
+    {
+        font-size: 30pt;
+        margin-bottom: -2px;
+    }
+    .featuredevent-date-location
+    {
+        font-size: 14pt;
+    }
+    .section-title
+    {
+        height: 50px;
+    }
+    .section-heading
+    {
+        letter-spacing: 2px;
+        font-weight: 400;
+        color: #CB373E;
+        font-size: 16pt;
+        height: 100%;
+        padding-top: 14px;
+    }
+    .section-column
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .section-text
+    {
+        line-height: 1.8em;
+    }
+    .featuredevent-heading
+    {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .featuredevent-text
+    {
+        margin-top: 30px;
+    }
+    .newsevent
+    {
+        border: 2px solid #eee;
+        margin-bottom: 20px;
+    }
+    .event-date
+    {
+        width: 100px;
+        height: 100px;
+        padding-top: 35px;
+        background-image: url('iconmonstr-calendar-4-icon-256%20shopped.png');
+        background-repeat: no-repeat;
+        background-position: 0;
+        background-size: 100%;
+    }
+    .event-date-day
+    {
+    }
+    .event-date-month
+    {
+    }
+    .event-date-time
+    {
+        font-size: 12pt;
+        padding-top: 5px;
+    }
+    .event-date-text
+    {
+        font-size: 14pt;
+        margin-bottom: 1px;
+    }
+    .event-date-location
+    {
+        font-size: 10pt;
+    }
+    .event-heading
+    {
+        color: #CB373E;
+    }
+    .event-text
+    {
+    }
+    .footer
+    {
+        background-color: #eee;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .footerline
+    {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .footerlink
+    {
+        text-decoration: none;
+        color: #317F42;
+    }
+    .footerlink:hover
+    {
+        color: black;
+        text-decoration: none;
+    }
+    .footerlink:link
+    {
+        color: #317F42;
+        text-decoration: none;
+    }
+    .footerlink:active
+    {
+        color: black;
+        text-decoration: none;
+    }
+    .section
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .section-heading-paragraph
+    {
+        border-bottom: 1px solid #363939;
+    }
+    .background-white
+    {
+        background-color: #F9FBF9;
+    }
+    .titlepicture-home
+    {
+        background-image: url('test.png');
+        height: 850px;
+    }
+    .titlepicture-org
+    {
+        background-image: url('PastedGraphicPNG%20Kopie.png');
+        height: 550px;
+        background-size: 100%;
+    }
+    .org-column
+    {
+        margin-top: 86px;
+        background-color: rgba(255, 255, 255, 0.95);
+    }
+    .inpicture-heading
+    {
+        margin-bottom: 10px;
+    }
+    .org-vorstand-image
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .holgerdembek
+    {
+    }
+    .margin-top-little
+    {
+        margin-top: 5px;
+    }
+    .text-italic
+    {
+        font-style: italic;
+    }
+    .margin-top-narrow
+    {
+        margin-top: -5px;
+    }
+    .margin-top-narrower
+    {
+        margin-top: -10px;
+    }
+    .org-vorstand-img
+    {
+        border: 5px solid #eee;
+    }
+    .titlepicture-project
+    {
+        height: 200px;
+        background-image: url('mapkenya.png');
+        background-size: 100%;
+        background-position: 0 -280px;
+        background-repeat: no-repeat;
+    }
+    .picture-project
+    {
+        height: 550px;
+        background-image: url('elkkwebprojectsemilow.JPG');
+        background-position: 0;
+    }
+    .titlesection-special
+    {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-origin: content-box;
+    }
+    .project-column
+    {
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    .picture-streetkids
+    {
+        height: 550px;
+        background-image: url('P1040025.JPG');
+        background-position: 0 -110px;
+    }
+    .section-text-special
+    {
+        line-height: 1.5em;
+        margin-top: -10px;
+    }
+    .margin-top-more
+    {
+        margin-top: 20px;
+    }
+    .margin-bottom-more
+    {
+        margin-bottom: 20px;
+    }
+    .margin-top-lots
+    {
+        margin-top: 100px;
+    }
+    .picture-bizi
+    {
+    }
+    .bizi
+    {
+        border: 5px solid white;
+        margin-bottom: 15px;
+        margin-right: 15px;
+    }
+    .margin-bottom-lots
+    {
+        margin-bottom: 100px;
+    }
+    .margin-bottom-lot
+    {
+        margin-bottom: 50px;
+    }
+    .picture-support
+    {
+        height: 900px;
+        background-image: url('IMG_7685.JPG');
+        background-attachment: fixed;
+        background-position: 0 -50px;
+    }
+    .support-submenu
+    {
+        height: 70px;
+    }
+    .support-submenu-link
+    {
+        height: 100%;
+        line-height: 70px;
+        text-align: center;
+        color: #317F42;
+    }
+    .support-submenu-link a
+    {
+        text-decoration: none;
+        color: inherit;
+    }
+    .support-submenu-link:hover
+    {
+        background-color: #317F42;
+        color: white;
+        cursor: pointer;
+    }
+    .support-submenu-link a:hover
+    {
+        color: white;
+    }
+    .picture-contact
+    {
+        height: 600px;
+        background-image: url('elkkwebtitle2.JPG');
+        background-position: 0;
+    }
+    .margin-bottom-contact
+    {
+        margin-bottom: 200px;
+    }
+    .imagegallery-container
+    {
+        height: 150px;
+    }
+    .imagegallery-image
+    {
+        height: 150px;
+    }
+    .imagegallery-desc
+    {
+        height: 100px;
+    }
+    .imagegallery-bg
+    {
+        background-image: url('P1040025.JPG');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .imagegallery-bg-2
+    {
+        background-size: contain;
+        background-image: url('bizi.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .heading-no-margin-bottom
+    {
+        margin-bottom: 0;
+    }
+    .imagegallery-image-overlay
+    {
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        background-color: rgba(0, 0, 0, 0.4);
+        text-align: center;
+        line-height: 150px;
+        cursor: pointer;
+    }
+    .imagegallery-image-overlay-image
+    {
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+        width: 50px;
+        height: 50px;
+    }
+    .imagegallery-container:hover .imagegallery-image-overlay
+    {
+        visibility: visible;
+    }
+    .body-overlay
+    {
+        overflow: hidden;
+    }
+    .imagegallery-singleview-overlay
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 2;
+    }
+    .imagegallery-singleview
+    {
+        position: absolute;
+        min-width: 800px;
+        max-width: 100%;
+        min-height: 600px;
+        max-height: 100%;
+        top: 200px;
+    }
+    .imagegallery-singleview-albumnav
+    {
+        height: 60px;
+        padding-top: 10px;
+        padding-bottom: 60px;
+    }
+    .imagegallery-singleview-albumtitle
+    {
+        height: 70px;
+        line-height: 70px;
+        padding-left: 20px;
+    }
+    .imagegallery-singleview-image
+    {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 400px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .image-gallery-singleview-imagenav
+    {
+        height: 60px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .albumnav-prev
+    {
+        float: left;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .albumnav-next
+    {
+        float: right;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .imagenav-prev
+    {
+        float: left;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .imagenav-next
+    {
+        float: right;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .imagegallery-close
+    {
+        float: right;
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        margin-top: 5px;
+        background-image: url('iconmonstr-x-mark-icon-256.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    .imagegallery-singleview-albumtitle-paragraph
+    {
+        float: left;
+    }
+    .imagegallery-singleview-image img
+    {
+    }
+    .heading-no-margin-bottom-second
+    {
+        margin-bottom: 10px;
+    }
+    .rb-image
+    {
+        background-image: url('iconmonstr-text-file-3-icon-256.png');
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 25px;
+    }
+    .rb-name
+    {
+        text-align: center;
+    }
+    .quicknav
+    {
+    }
+    .quicknav-donateonline
+    {
+    }
+    .quicknav-normal
+    {
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+    }
+    .quicknav-normal a
+    {
+        color: #317F42;
+        text-decoration: none;
+    }
+    quicknav-normal a:hover
+    {
+        color: #363939;
+        text-decoration: none;
+    }
+    .bt-normal
+    {
+        border: 1px solid #363939;
+        margin-top: 10px;
+        background-color: #F9FBF9;
+    }
+    .bt-normal:hover
+    {
+        background-color: #F9FBF9;
+        border: 1px solid #317F42;
+        color: #317F42;
+    }
+    .quicknav-text
+    {
+        height: 150px;
+    }
+    .cms-topsection
+    {
+        height: 100px;
+    }
+    .text-center
+    {
+        text-align: center;
+    }
+    .nav-hamburger
+    {
+        background-image: url('iconmonstr-menu-3-icon-256.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 30px 30px;
+        visibility: hidden;
+        height: 0px;
+    }
+    .container-titleslogan
+    {
+    }
+    .section-titleslogan
+    {
+        font-size: 12pt;
+        visibility: hidden;
+        height: 0;
+    }
+    .div-hamburger
+    {
+        height: 0px;
+    }
+    .nomargin
+    {
+        padding-left: 0;
+        margin: 0;
+        padding-right: 0;
+    }
+    .container-titleslogan
+    {
+        height: 0px;
+        visibility: hidden;
+    }
+    .nopadding
+    {
+        padding: 0;
+        left: 0;
+    }
+    .home-firstsection-margin
+    {
+        margin-top: -45px;
+    }
+}
+
+@media (max-width:479px)
+{
+    .nav-hamburger
+    {
+        background-image: url('iconmonstr-menu-3-icon-256.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 30px 30px;
+    }
+    .container-titleslogan
+    {
+        
+    }
+    .section-titleslogan
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 12pt;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px)
+{
+    .div-hamburger
+    {
+        height: 0px;
+    }
+    .nomargin
+    {
+        padding-left: 0;
+        margin: 0;
+        padding-right: 0;
+    }
+    .container-titleslogan
+    {
+        height: 0px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px)
+{
+    .nopadding
+    {
+        padding: 0;
+        left: 0;
+    }
+    .home-firstsection-margin
+    {
+        margin-top: -45px;
+    }
+}
+
+.logo-image
+{
+    max-width: 100%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    max-height: 95%;
+}
+
+a
+{
+    decoration: none;
+    color: #317F42;
+}
+
+.titlemenulink
+{
+    text-decoration: none;
+    color: #363939;
+}
+
+.titlemenulink:link
+{
+    color: #363939;
+}
+
+.titlemenulink:visited
+{
+    color: #363939;
+}
+
+a:hover
+{
+    color: #363939;
+}
+
+a:visited
+{
+    color: #317F42;
+}
+
+
+
+.footerlink:visited {
+    
+    color: #317F42;
+}
+
+.geschenk_bullet
+{
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 60px;
+    color: #F9FBF9;
+}
+
+.geschenk-bullet-gray
+{
+    background-color: #363939;
+}
+
+.geschenk-bullet-red
+{
+    background-color: #CB373E;
+}
+
+.geschenk-bullet-green
+{
+    background-color: #317F42;
+}
+
+.geschenk-text
+{
+    line-height: 70px;
+}
+
+.magnet-height
+{
+    height: 70px;
+}
+
+.titlemenu {
+    
+    padding-top: 1px;
+    
+}
+

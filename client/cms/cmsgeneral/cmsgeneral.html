@@ -1,0 +1,45 @@
+<template name="cmsgeneral">
+    {{#if currentUser}}
+	<section class="titlesection">
+            {{> cmstitlemenu}}
+        </section>
+        {{> loginButtons}}
+        <section class="margin-top-more margin-bottom-more margin-top-lots">
+            <div>
+                <div class="container section-heading">
+                    <div class="col-md-12">
+                        <p class="section-heading-paragraph heading-small">Generelles</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="col-md-12">
+                    <p>Neue Satzung</p>
+                    <div class="form-group"> 
+                        <label class="control-label" for="formInput102">Datei</label>
+                        {{> upload_bootstrap multiple=false callbacks=uploadSatzungCallbacks}}
+                    </div>
+                                       
+                </div>
+				<div class="col-md-12">
+                    <p>Mitgliedsantrag</p>
+                    <div class="form-group"> 
+                        <label class="control-label" for="formInput102">Datei</label>
+                        {{> upload_bootstrap multiple=false callbacks=uploadMitgliedsantragCallbacks}}
+                    </div>
+                                       
+                </div>
+				<div class="col-md-12">
+                    <p>Patenschaftsantrag</p>
+                    <div class="form-group"> 
+                        <label class="control-label" for="formInput102">Datei</label>
+                        {{> upload_bootstrap multiple=false callbacks=uploadPatenschaftsantragCallbacks}}
+                    </div>
+                                       
+                </div>
+            </div>
+        </section>
+        {{else}}
+        {{> loginButtons}}
+        {{/if}}
+</template>

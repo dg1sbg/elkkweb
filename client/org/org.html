@@ -1,0 +1,63 @@
+<template name="org">
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69822465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	 <section class="titlesection titlepicture-org">
+           {{> titlemenu}}
+        </section>
+        <section class="specialsection section">
+            <div class="section-title">
+                <div class="container section-heading">
+                    <p class="section-heading-paragraph">{{getText "OrgOrgTitle"}}</p>
+                </div>
+            </div>
+            <div class="container fullheight">
+                <div class="section-column col-md-12">
+                    <p class="specialsection-text text-large text-weight-thin section-text">{{{getText "OrgOrgDescription"}}}</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="specialsection section">
+            <div class="section-title">
+                <div class="container section-heading">
+                    <p class="section-heading-paragraph">{{getText "OrgVorstandTitle"}}</p>
+                </div>
+            </div>
+            <div class="container fullheight">
+                {{#each vorstand}}
+                <div class="section-column col-md-4 center-inner-text col-sm-4">
+                    <div class="org-vorstand-image">
+                        <img src="{{url}}" class="holgerdembek org-vorstand-img" height="100%"/>
+                    </div>
+                    <p class="specialsection-text text-large text-weight-thin section-text margin-top-little">{{firstName}} {{lastName}}</p>
+                    <p class="specialsection-text text-weight-thin section-text text text-italic margin-top-narrower">{{{functionInGroup}}}</p>
+                </div>
+                {{/each}}
+            </div>
+        </section>
+        <section class="specialsection section">
+            <div class="section-title">
+                <div class="container section-heading">
+                    <p class="section-heading-paragraph">{{getText "OrgAusschuesseTitle"}}</p>
+                </div>
+            </div>
+            <div class="container fullheight">
+                <div class="col-md-6 section-column">
+                    <div class="heading-small">{{getText "OrgProjektausschussTitle"}}</div>
+                    <p class="text text-weight-thin">{{{getText "OrgProjektausschussDescription"}}}</p>
+                </div>
+                <div class="col-md-6 section-column">
+                    <div class="heading-small">{{getText "OrgOeffentlichkeitsausschussTitle"}}</div>
+                    <p class="text text-weight-thin">{{{getText "OrgOeffentlichkeitsausschussDescription"}}}</p>
+                </div>
+            </div>
+        </section>
+</template>

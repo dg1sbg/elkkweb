@@ -1,0 +1,36 @@
+<template name="contact">
+	<section>
+            {{> titlemenu}}
+        </section>
+        <section class="titlesection-special picture-contact">
+</section>
+        <section class="margin-top-more margin-bottom-more margin-bottom-contact">
+            <div class="">
+                <div class="container section-heading">
+                    <div class="col-md-12">
+                        <p class="section-heading-paragraph heading-small">{{getText "ContactTitle"}}</p> 
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="col-md-12 section-column"> 
+                    <p class="section-text-special text">{{{getText "ContactDescription1"}}}
+</p>
+					{{#with getAddress "Kontaktadresse"}}
+                    <p class="text-weight-bold section-text text">{{{value}}}</p>
+					{{/with}}
+                    <p class="section-text text">{{{getText "ContactDescription2"}}}</p> 
+                </div>
+            </div>
+        </section>
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69822465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</template>

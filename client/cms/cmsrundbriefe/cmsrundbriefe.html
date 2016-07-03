@@ -1,0 +1,48 @@
+<template name="cmsrundbriefe">
+    {{#if currentUser}}
+	<section class="titlesection">
+            {{> cmstitlemenu}}
+        </section>
+        {{> loginButtons}}
+        <section class="margin-top-more margin-bottom-more margin-top-lots">
+            <div>
+                <div class="container section-heading">
+                    <div class="col-md-12">
+                        <p class="section-heading-paragraph heading-small">Rundbriefe</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="col-md-12"> 
+                    <p class="heading-medium">Rundbrief hinzufügen</p>
+                    <div class="form-group"> 
+                        <label class="control-label" for="formInput88">Datei</label>
+                         {{> upload_bootstrap fileTypes='.pdf' multiple=false callbacks=uploadRundbriefCallbacks}}
+                    </div>
+                    <div class="form-group"> 
+                        <label class="control-label" for="formInput88">Name</label>
+                        <input type="text" class="form-control" id="rundbriefuploadname" value="">
+                    </div>
+                    <div class="form-group"> 
+                        <label class="control-label" for="formInput88">Jahr</label>
+                        <input type="text" class="form-control" id="rundbriefuploadyear" value=""/>
+                    </div>
+                    <button type="button" class="btn btn-default">Hinzufügen</button>
+                </div>
+                {{#each years}}
+                    <div class="col-md-12 margin-top-more">
+                        <p class="heading-medium text-weight-thin heading-no-margin-bottom background-gray">{{value}}</p>
+                    </div>
+                    {{#each rundbriefe value}}
+                        <div class="section-column col-md-3 imagegallery-container">
+                            <div class="pg-empty-placeholder rb-image"></div>
+                            <div class="rb-name text-weight-thin text green-elkk">{{name}}</div>                    
+                        </div>
+                    {{/each}}
+                {{/each}}
+            </div>
+        </section>
+        {{else}}
+        {{> loginButtons}}
+        {{/if}}
+</template>

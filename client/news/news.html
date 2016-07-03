@@ -1,0 +1,19 @@
+<template name="news">
+	<div class="col-md-12 newsevent">
+                        <div class="fullheight section-column col-md-4">
+                            <div class="center-inner-text center-horizontal event-date">
+                                <p class="text-weight-thin event-date-text"> 
+                                    {{day}} 
+                                </p>
+                                <p class="text-secondary">{{month}}</p>
+                            </div>
+                            <p class="center-inner-text event-date-time">{{time}}</p>
+                            <p class="center-inner-text event-date-location">{{{location}}}</p> 
+                        </div>
+                        <div class="fullheight section-column col-md-8">
+                            <p class="heading-small event-heading">
+    {{title}}</p>
+                            <p class="text-weight-thin section-text text">{{{text}}}</p> 
+                        </div>                         
+	</div>
+</template>

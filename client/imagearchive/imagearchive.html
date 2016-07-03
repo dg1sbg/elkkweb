@@ -1,0 +1,83 @@
+<template name="imagearchive">
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69822465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <div class="imagegallery-singleview-overlay" id="imagegallery-singleview-overlay" style="visibility: hidden">
+            <div class="imagegallery-singleview background-white">
+                <section class="imagegallery-singleview-albumtitle heading-medium background-gray heading-no-margin-bottom green-elkk">
+                    <p class="imagegallery-singleview-albumtitle-paragraph">Eröffnungsfeier Projekthaus Januar 2015</p>
+                    <div class="imagegallery-close"></div>
+                </section>
+                <section class="imagegallery-singleview-albumnav background-gray">
+                    
+                    <div class="albumnav-prev">
+                        {{#if prevalbum}}
+                        <img id="#prevalbum" src="iconmonstr-arrow-25-icon-256%20Kopie.png" width="30px" class="albumnav-prev" height="30px">
+                        <p class="text text-weight-thin">Vorheriges Album</p>
+                        {{/if}}
+                    </div>
+                    
+                    
+                    <div class="albumnav-next">
+                        {{#if nextalbum}}
+                        <img id="#nextalbum" src="iconmonstr-arrow-25-icon-256.png" width="30px" class="albumnav-next" height="30px">
+                        <p class="text text-weight-thin">Nächstes Album</p>
+                        {{/if}}
+                    </div>
+                    
+                </section>
+                <section class="imagegallery-singleview-image" style="background-image: url({{selectedimage}})"></section>
+                <section class="image-gallery-singleview-imagenav">
+                    <div class="imagenav-prev">
+                        {{#if previmage}}
+                        <img id="#previmage" src="iconmonstr-arrow-25-icon-256%20Kopie.png" width="30px" height="30px" class="imagenav-prev">
+                        <p class="text text-weight-thin">Vorheriges Bild</p>
+                        {{/if}}
+                    </div>
+                    <div class="imagenav-next">
+                        {{#if nextimage}}
+                        <img id="#nextimage" src="iconmonstr-arrow-25-icon-256.png" width="30px" height="30px" class="imagenav-next">
+                        <p class="text text-weight-thin">Nächstes Bild</p>
+                        {{/if}}
+                    </div>
+                </section>
+            </div>
+        </div>
+	<section>
+           {{> titlemenu}}
+    </section>
+        <section class="titlesection-special picture-streetkids">
+</section>
+        <section class="margin-top-more margin-bottom-more">
+            <div class="">
+                <div class="container section-heading">
+                    <div class="col-md-12">
+                        <p class="section-heading-paragraph heading-small">Bildergalerie</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+				 {{#each albums}}
+                <div class="col-md-12 margin-top-more">
+                    <p class="heading-medium text-weight-thin heading-no-margin-bottom background-gray">{{name}}</p>
+                </div>
+                {{#each images name}}
+                <div class="section-column col-md-3 imagegallery-container">
+                    <div id="{{url}}" class="imagegallery-image imagegallery-bg" style="background-image: url({{url}})">
+                        <div class="imagegallery-image-overlay" data-pg-collapsed>
+                            <img src="iconmonstr-fullscreen-icon-256.png" class="imagegallery-image-overlay-image"/>
+                        </div>
+                    </div>    
+                </div>
+                {{/each}}
+                {{/each}}
+            </div>
+        </section>
+</template>

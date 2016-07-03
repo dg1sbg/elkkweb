@@ -1,0 +1,79 @@
+<template name="titlemenu">
+     <nav class="navbar-fixed-top largemenu">
+                <div class="container container-main">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12 titlemenu">
+                        <div class="fullheight center-inner-text col-md-2 col-xs-6 nomargin col-sm-1 logo-image">
+                            <img src="eldokids_logo.png" class="logo-image"/>                             
+                        </div>
+                        <div class="col-md-10 col-xs-6 nomargin col-sm-11">
+                                    
+                             <nav role="navigation" class="text">
+                                    <a href="/" class="titlemenulink">
+                                    <div class="col-md-2 navitem background-white col-sm-2"> 
+                                        Home
+    </div></a>
+                                    <a href="/Verein" class="titlemenulink">
+                                    <div class="col-md-2 fullheight navitem background-white col-sm-2"> 
+                                        Verein
+    </div></a>
+                                    <a href="/Projekt" class="titlemenulink">
+                                    <div class="col-md-2 fullheight navitem background-white col-sm-2">Projekt</div></a>
+                                    <a href="/Unterstuetzung" class="titlemenulink">
+                                    <div class="col-md-2 fullheight navitem background-white col-sm-2">Unterstützung</div></a>
+                                    <a href="/Kontakt" class="titlemenulink">
+                                    <div class="col-md-2 fullheight navitem background-white col-sm-2"> 
+                                        Kontakt
+    </div></a>
+                                    <a href="{{Rundbrief}}" class="titlemenulink">
+                                    <div class="col-md-2 fullheight navitem background-white col-sm-2"> 
+                                        Rundbrief
+    </div></a>                               
+                                </nav>    
+                                                         
+                        </div> 
+                                      
+                    </div>
+                </div>
+            </nav>
+	<nav class="navbar-fixed-top smallmenu">
+                <div class="container container-main">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12 titlemenu">
+                        <div class="fullheight center-inner-text col-md-2 col-xs-6 nomargin col-sm-1 logo-image">
+                            <img src="eldokids_logo.png" class="logo-image"/>                             
+                        </div>
+                        <div class="fullheight col-md-10 col-xs-6 nomargin col-sm-11">
+                            <div class="fullheight div-hamburgernav div-hamburger">
+                                <a href="" id="togglemenu"><div class="col-xs-12 fullheight nav-hamburger"> 
+                                </div></a>
+                            </div>
+                            {{#if menuisopen}}
+                            <nav role="navigation" class="text">
+                                    <a href="/" class="titlemenulink">
+                                    <div class="col-md-2 navitem background-white col-sm-2"> 
+                                        Home
+    </div></a>
+                                    <a href="/Verein" class="titlemenulink">
+                                    <div class="col-md-2 fullheight navitem background-white col-sm-2"> 
+                                        Verein
+    </div></a>
+                                    <a href="/Projekt" class="titlemenulink">
+                                    <div class="col-md-2 fullheight navitem background-white col-sm-2">Projekt</div></a>
+                                    <a href="/Unterstuetzung" class="titlemenulink">
+                                    <div class="col-md-2 fullheight navitem background-white col-sm-2">Unterstützung</div></a>
+                                    <a href="/Kontakt" class="titlemenulink">
+                                    <div class="col-md-2 fullheight navitem background-white col-sm-2"> 
+                                        Kontakt
+    </div></a>
+                                    <a href="{{Rundbrief}}" class="titlemenulink">
+                                    <div class="col-md-2 fullheight navitem background-white col-sm-2"> 
+                                        Rundbrief
+    </div></a>                               
+                                </nav>   
+                                {{/if}}                          
+                        </div>                         
+                    </div>
+                </div>
+            </nav>
+            
+           
+</template>

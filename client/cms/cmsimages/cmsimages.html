@@ -1,0 +1,61 @@
+<template name="cmsimages">
+        {{#if currentUser}}
+	 <section class="titlesection">
+            {{> cmstitlemenu}}
+        </section>
+        {{> loginButtons}}
+        <section class="margin-top-more margin-bottom-more margin-top-lots">
+            <div>
+                <div class="container section-heading">
+                    <div class="col-md-12">
+                        <p class="section-heading-paragraph heading-small">Bilder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="col-md-6">
+                    <p>Bild hinzufügen</p>
+                    <div class="form-group"> 
+                        <label class="control-label" for="formInput102">Datei</label>
+                        {{> upload_bootstrap multiple=false callbacks=uploadImageCallbacks}}
+                    </div>
+                    <div class="form-group"> 
+                        <label class="control-label" for="formInput102">Album</label>
+                        <select class="form-control" id="imageuploadalbumname"> 
+                            {{#each albums}}
+                            <option value="{{name}}">{{name}}</option>                             
+                            {{/each}}                        
+                        </select>
+                    </div>
+                                       
+                </div>
+                <div class="col-md-6">
+                    <p>Album hinzufügen</p>
+                    <div class="form-group"> 
+                        <label class="control-label" for="formInput102">Name</label>
+                        <input type="text" class="form-control" id="addAlbumName" value="">
+                    </div>
+                    <div class="form-group"> 
+                        <label class="control-label" for="formInput102">Position
+                        </label>
+                        <input type="text" class="form-control" id="addAlbumOrder" value="">
+                    </div>
+                    <button type="button" class="btn btn-default" id="addAlbum">Hinzufügen</button>                     
+                </div>
+                {{#each albums}}
+                <div class="col-md-12 margin-top-more">
+                    <p class="heading-medium text-weight-thin heading-no-margin-bottom background-gray">{{name}}</p>
+                </div>
+                {{#each images name}}
+                <div class="section-column col-md-3 imagegallery-container">
+                    <div class="imagegallery-image imagegallery-bg" style="background-image: url({{url}})">
+</div>    
+                </div>
+                {{/each}}
+                {{/each}}
+            </div>
+        </section>
+        {{else}}
+        {{> loginButtons}}
+        {{/if}}
+</template>
