@@ -1,0 +1,584 @@
+#! /usr/local/bin/bash
+
+# =============================================================================
+# 
+# C O N S E Q U O R   C O N S U L T I N G   A G  -  T O O L B O X
+#
+# =============================================================================
+#
+# Name:         rc.elkk_meteor
+#
+# Type:         shell script
+#
+# Purpose:      Handle start and stop of packages
+#               Also usable for HP ServiceGuard
+#
+# Arguments:    $1      = type of operation:
+#                         "start"               
+#                         "start_msg"           
+#                         "stop"                
+#                         "stop_msg"            
+#                         "restart"             
+#                         "monitor"             
+#                         "monitor_only"                
+#                               
+#
+# Original Author:       HEWLETT PACKARD
+#                        HP Consulting
+#                        Klaus Wagner, Andreas Miehe, Frank Goenninger
+#                        Sindelfingen 
+#                        Germany
+#
+# Modified By:   Frank Goenninger
+#
+# Plattforms:    HP-UX 10.20, HP-UX 11i, Linux, Mac OS X, FreeBSD
+#
+# Description:   Start, stop and monitor an application
+#
+# ----------------------------------------------------------------------------
+# Modification History:
+#
+# 1997.12.11      Klaus Wagner     created
+# 1999-07-06      Andreas Miehe    adapted for ADtranz CPDMS
+# 2003-09-16      Frank Goenninger adapted for Linux and Oracle 9iR2
+# 2006-04-22	    Frank Goenninger adapted for Perforce p4d on OS X
+# 2009-09-18      Frank Goenninger adapted for CC AG env on web.consequor.eu
+# 2015-03-22      Frank Goenninger adapted for ELKK Meteor
+#
+# =============================================================================
+
+# ----------------------------------------------------------------------------- 
+# init section
+# ----------------------------------------------------------------------------- 
+
+PATH=/usr/sbin:/bin:/usr/bin:/sbin:/usr/local/bin
+export PATH
+
+# - setup signal handling -----------------------------------------------------
+
+trap "trap_handler 2"   2
+trap "trap_handler 3"   3
+trap "trap_handler 4"   4
+trap "trap_handler 5"   5
+trap "trap_handler 6"   6
+trap "trap_handler 7"   7
+trap "trap_handler 8"   8
+trap "trap_handler 9"   9
+trap "trap_handler 10" 10
+trap "trap_handler 11" 11
+trap "trap_handler 12" 12
+trap "trap_handler 13" 13
+trap "trap_handler 14" 14
+trap "trap_handler 15" 15
+
+# - Predefined Variables --- DO NOT MODIFY ------------------------------------
+
+ROOTDIR="/"                                     # Entry point in dir tree
+RVAL=0                                          # general exit code
+TAG=`basename $0`                               # tag for syslog
+FAC="LOCAL1"                                    # facility for syslog messages
+PRI="NOTICE"                                    # priority for syslog messages
+DOIT="1"                                        # control switch
+HOST=`hostname`                                 # hostname for logfile
+LOCKFILE=/var/tmp/$TAG                  	      # lock file for handle
+
+# - mandatory Variables -------------------------------------------------------
+
+APPNAME="ELDORET KIDS METEOR WEBSITE"           # Name for startup message
+PKGNAME="elkk_meteor"                         		# MC/SG package name
+LOGFILE=""	                                    # May be null
+FLAGVAR="HA_ELKK_METEOR"                         # variable in rc.config.d
+MSG_PREFIX="command"                            # Prefix for syslog messages
+APP_PREFIX="application"                        # Prefix for syslog messages
+PPGM="/var/data/eldoret-kids/website/lbin" # Full path name
+PPGM=$PPGM"/"$TAG                               # The prgram name
+INCLUSTER="0"                                   # Set to 1 if this script is
+                                                # part of a HA cluster
+CLUSTER_HOME="/etc/cmcluster"                   # Only used when in cluster
+
+# - User Variables ------------------------------------------------------------
+
+INICMD=""    		                    # environment initialisation
+
+APP_USER="eldoret-kids"
+APP_START_CMD="/var/data/eldoret-kids/website/bin/start-elkk-meteor.sh"
+APP_STOP_CMD="/var/data/eldoret-kids/website/bin/stop-elkk-meteor.sh"
+
+RUNCMD[0]="su $APP_USER -c $APP_START_CMD"
+RUNASYNC=1                                      # 1 = run in background
+                                                # 0 = run in foreground
+
+OFFCMD[0]="su $APP_USER -c $APP_STOP_CMD"
+#OFFCMD[0]=":"
+CHKCMD[0]="$PKGNAME"                            # commands to be monitored
+KILCMD="kill_user $APP_USER"
+
+# =============================================================================
+# function:     logit
+# ----------------------------------------------------------------------------- 
+# parameter:    $1      priority for syslog messages
+#               $2      message string
+# purpose:      writes message to syslog and optinally to log file
+# =============================================================================
+
+get_lock() {
+
+  LOCKFILE=$4
+  RVAL=1
+
+  if [ ! -r $LOCKFILE ]
+  then
+    echo $$ > $LOCKFILE
+    RVAL=$?
+  fi
+  
+  return $RVAL
+}
+
+# =============================================================================
+# function:     logit
+# ----------------------------------------------------------------------------- 
+# parameter:    $1      priority for syslog messages
+#               $2      message string
+# purpose:      writes message to syslog and optinally to log file
+# =============================================================================
+
+logit() {
+    
+    logger -i -t $TAG -p $FAC.$1 "$2"
+
+    if [ "$LOGFILE" != "" ]; then 
+	DATE=`date "+%b %d %T"`
+	echo "$DATE $HOST $TAG[$$]: $2"   >>$LOGFILE
+    fi
+
+}
+
+# =============================================================================
+# function:     existsproc
+# ----------------------------------------------------------------------------- 
+# parameter:    $1      command string of process
+# purpose:      checks process list for existence of specified process
+# =============================================================================
+
+existsproc() {
+
+    if [ "$1" = "" ]; then return 1 ; fi
+
+    pid=`ps -ef | grep "$1" | grep -v "grep" | awk '{ print $2 }  `
+    
+    if [ "$pid" != "" -a "$pid" != "$$" ]; then
+	return 0
+    else
+	return 1
+    fi
+
+}
+
+# =============================================================================
+# function:     killproc
+# ----------------------------------------------------------------------------- 
+# parameter:    $1      command string of process
+# purpose:      kills specified process in graceful way:
+#               first send SIGTERM, wait 2 seconds, send SIGKILL
+# =============================================================================
+
+killproc() {
+
+    pid=`ps -ef | grep "$1" | grep -v "grep" | awk '{ print $2 }  `
+    
+    if [ "$pid" != "" ]; then
+
+	kill $pid >/dev/null 2>&1
+	sleep 2
+	if ps -p $pid >/dev/null 2>&1;  then
+            kill -9 $pid >/dev/null 2>&1
+	fi
+	echo "$MSG_PREFIX \"$1\" stopped"
+
+    else
+
+	echo "$MSG_PREFIX \"$1\" already stopped"
+
+    fi
+
+}
+
+# =============================================================================
+# function:     kill_multiple_proc
+# ----------------------------------------------------------------------------- 
+# parameter:    $1      command string/regex of process(es)
+# purpose:      kills specified process(es) in graceful way:
+#               first send SIGTERM, wait 2 seconds, send SIGKILL
+# =============================================================================
+
+kill_multiple_proc() {
+
+    integer COUNT=0
+
+    ps -ef | grep "$1" | grep -v "grep" | awk '{ print $2 }' | \
+	while read pid
+    do
+        
+	if [ "$pid" != "" ]; then
+
+            kill $pid >/dev/null 2>&1
+            sleep 2
+            if ps -p $pid >/dev/null 2>&1;  then
+		kill -9 $pid >/dev/null 2>&1
+            fi
+            let COUNT+=1
+
+	fi
+
+    done
+
+    echo "$COUNT process(es) matching \"$1\" killed"
+
+}
+
+# =============================================================================
+# function:     kill_user
+# ----------------------------------------------------------------------------- 
+# parameter:    $1      user whose processes will be killed
+# purpose:      kills processes in graceful way:
+#               first send SIGTERM, wait 2 seconds, send SIGKILL
+# =============================================================================
+
+kill_user() {
+
+    integer RC=0
+
+    ps -fu "$1" 2>/dev/null | awk '{ print $2 } ' |      \
+	while read pid 
+    do
+	if [ "$pid" != "" ]; then
+            kill $pid >/dev/null 2>&1
+	fi
+    done
+
+    sleep 2
+
+    ps -fu "$1" 2>/dev/null | awk '{ print $2 } ' |      \
+	while read pid 
+    do
+	if [ "$pid" != "" ]; then
+
+            kill -9 $pid >/dev/null 2>&1
+            if ps -p $pid >/dev/null 2>&1;  then
+		RC=RC+1
+            fi
+
+	fi
+
+    done
+
+    return $RC
+
+}
+
+# =============================================================================
+# function:     trap_handler
+# ----------------------------------------------------------------------------- 
+# parameter:    $1      signal 
+# purpose:      handles general trap handling
+# =============================================================================
+
+trap_handler() {
+
+    logit INFO "Signal $1 caught"
+
+    case "$1" in
+
+	2)   logit INFO "aborting..."
+            rm -f $LOCKFILE >/dev/null 2>&1
+            exit $1
+            ;;
+
+	15)  logit INFO "exiting..."
+            rm -f $LOCKFILE >/dev/null 2>&1
+            exit $1
+            ;;
+
+    esac
+
+}
+
+# =============================================================================
+# M A I N   S E C T I O N 
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# source the system configuration variables
+# -----------------------------------------------------------------------------
+
+# HP-UX etc
+if [ -f /etc/rc.config ] ; then
+    . /etc/rc.config
+fi
+
+# OS X
+if [ -f /etc/rc.common ] ; then
+    . /etc/rc.common
+fi
+
+if [ "$INCLUSTER" = "1" ]; then
+  
+  eval DOIT=\$$FLAGVAR
+  if [ "$DOIT" != 1 ]; then
+     RVAL=2
+  fi
+
+  if [ ! -d /etc/cmcluster/locks ] ; then
+      mkdir -p /etc/cmcluster/locks
+  fi
+fi
+
+# -----------------------------------------------------------------------------
+# test if script is called multiple times
+# -----------------------------------------------------------------------------
+
+case "$1" in
+
+    start|stop|restart )    if ! get_lock -t -1 -l $LOCKFILE ; then
+
+        PID=`cat $LOCKFILE 2>/dev/null`
+        PID=${PID:-unknown}
+        logit INFO "exit, because another instance is running, pid=$PID"
+        exit 0
+
+        fi
+        ;;
+    *)                      ;;
+
+esac
+
+case "$1" in
+
+# -----------------------------------------------------------------------------
+# handle start message
+# -----------------------------------------------------------------------------
+    'start_msg')
+
+	echo "Starting $APPNAME"
+	;;
+
+# -----------------------------------------------------------------------------
+# handle stop message
+# -----------------------------------------------------------------------------
+    'stop_msg')
+
+	echo "Stopping $APPNAME"
+	;;
+
+# -----------------------------------------------------------------------------
+# handle start 
+# -----------------------------------------------------------------------------
+    'start'|'StartService')
+
+	if [ "${RUNCMD[0]}" != "" ]; then
+
+	    if [ "$DOIT" = 1 ]; then 
+
+		if [ "$RUNASYNC" = 1 ] ; then
+		    $INICMD
+		    for i in "${RUNCMD[@]}"          
+		    do
+			$i &
+		    done
+		else
+		    $INICMD
+		    for i in "${RUNCMD[@]}"
+		    do
+			$i
+		    done
+
+		fi
+		logit INFO "\"$APPNAME\" started"
+
+	      fi
+
+	    else
+
+		logit INFO "function \"start\" not implemented"
+
+	    fi
+	    ;;
+
+# -----------------------------------------------------------------------------
+# handle restart 
+# -----------------------------------------------------------------------------
+    'restart'|'RestartService')
+
+	if [ "${RUNCMD[0]}" != "" ]; then
+
+	    if [ "$DOIT" = 1 ]; then 
+
+		if [ "$RUNASYNC" = 1 ] ; then
+		    $INICMD
+		    for i in "${RUNCMD[@]}"             
+		    do
+			$i &
+		    done
+		else
+		    $INICMD
+		    for i in "${RUNCMD[@]}"             
+		    do
+			$i 
+		    done
+		fi
+
+		logit INFO "\"$APPNAME\" re-started"
+
+	    else
+
+		logit INFO "function \"restart\" not implemented"
+
+	    fi
+       fi
+    ;;
+
+# -----------------------------------------------------------------------------
+# handle monitor
+# -----------------------------------------------------------------------------
+    'monitor')
+
+	if [ "${CHKCMD[0]}" != "" ]; then
+
+	    if [ "$DOIT" = 1 ]; then 
+
+		$INICMD
+		
+		for i in "${CHKCMD[@]}"                
+		do
+                    if ! existsproc "$i" ; then
+                        logit INFO "$APP_PREFIX \"$APPNAME\" will be restarted"
+                        $PPGM restart
+                        break 2
+                    fi
+		done
+
+		logit INFO "\"$APPNAME\" will be monitored"
+
+		while true ; do
+		    if [ ! -f $CLUSTER_HOME/monman/$PKGNAME ]; then
+			for i in "${CHKCMD[@]}"
+			do
+			    if ! existsproc "$i" ; then
+				logit INFO "$MSG_PREFIX \"$i\" disappeared"
+				exit 2
+			    fi
+			done
+		    fi
+		    sleep ${MONITOR_INTERVALL:-5}
+		done
+
+
+	    fi
+
+	else
+
+	    logit INFO "function \"monitor\" not implemented"
+
+	fi
+	;;
+
+# -----------------------------------------------------------------------------
+# handle monitor_only
+# -----------------------------------------------------------------------------
+    'monitor_only')
+
+	if [ "${CHKCMD[0]}" != "" ]; then
+
+	    if [ "$DOIT" = 1 ]; then 
+
+		logit INFO "$APP_PREFIX \"$APPNAME\" will be monitored only"
+
+		while true 
+		do
+		    integer COUNT=0
+		    for i in "${CHKCMD[@]}"
+		    do
+			if ! existsproc "$i" ; then
+                            logit INFO "$MSG_PREFIX \"$i\" disappeared"
+                            let COUNT+=1
+			fi
+		    done
+
+		    if [ $COUNT != 0 ] ; then
+			logit INFO "$APP_PREFIX \"$APPNAME\" monitoring disabled"
+			while true
+			do
+                            integer COUNT=0
+                            for i in "${CHKCMD[@]}"
+                            do
+                                if existsproc "$i" ; then
+                                    let COUNT+=1
+                                fi
+                            done
+                            if [ $COUNT = ${#CHKCMD[*]} ] ; then
+                                logit INFO "$APP_PREFIX \"$APPNAME\" available again"
+                                break
+                            fi
+                            sleep ${MONITOR_INTERVALL:-5}
+
+			done
+		    fi
+
+		    sleep ${MONITOR_INTERVALL:-5}
+		done
+
+	    fi
+
+	else
+
+	    logit INFO "function \"monitor_only\" not implemented"
+
+	fi
+	;;
+
+# -----------------------------------------------------------------------------
+# handle stop 
+# -----------------------------------------------------------------------------
+    'stop'|'StopService')
+
+	if [ "${OFFCMD[0]}" != ""  -o "$KILCMD" != "" ]; then
+
+	    if [ "$DOIT" = 1 ]; then 
+		
+		if [ "${OFFCMD[0]}" != "" ]; then
+
+		    $INICMD
+		    for i in "${OFFCMD[@]}"             
+		    do
+			$i
+		    done
+		else
+		    MSG=`killproc "$KILCMD"`
+		fi
+		logit INFO "\"$APPNAME\" stopped"
+
+	    fi
+
+	else
+
+	    logit INFO "function \"stop\" not implemented"
+
+	fi
+	;;
+
+# -----------------------------------------------------------------------------
+# default
+# -----------------------------------------------------------------------------
+    *)
+	echo "usage: $0 {start|restart|monitor|monitor_only|stop|start_msg|stop_msg}"
+	RVAL=1
+	;;
+
+esac
+
+rm -f $LOCKFILE >/dev/null 2>&1
+
+exit $RVAL
+
+

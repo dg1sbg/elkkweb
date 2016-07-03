@@ -1,0 +1,31 @@
+ROOTDIR=/home/eldoret-kids/website
+
+SERVER_DIR=$ROOTDIR/bundle/programs/server/
+NODE_MODULES_DIR=$SERVER_DIR/node_modules
+
+set -x
+
+PWD=`pwd` 
+
+cd $ROOTDIR
+if [ ! -d $NODE_MODULES_DIR ]
+then
+  cd $SERVER_DIR
+  mkdir node_modules
+  cd $ROOTDIR
+fi
+cd $NODE_MODULES_DIR
+npm install -f bcrypt
+
+cd $ROOTDIR
+cd bundle/programs/server/npm/npm-bcrypt/node_modules
+rm -rf bcrypt
+
+cd $ROOTDIR
+ln -s bundle/programs/server/node_modules/bcrypt bundle/programs/server/npm/npm-bcrypt/node_modules/bcrypt
+
+cd $ROOTDIR
+cd $SERVER_DIR
+npm install -f
+
+cd $PWD

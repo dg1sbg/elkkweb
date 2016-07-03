@@ -1,0 +1,19 @@
+#
+# =============================================================================
+# PROFILE for ELKK Web Site based on METEOR
+# =============================================================================
+# $Header: /opt/consequor/production/p4/bin/RCS/profile.801.p4,v 1.1 2009/11/06 11:20:06 consweb Exp $
+
+# set -x
+
+# Set vars
+
+PACKAGE_PRODUCTION_DIR=/var/data/eldoret-kids/website
+PATH=$PATH:$PACKAGE_PRODUCTION_DIR/lbin:$PACKAGE_PRODUCTION_DIR/bin
+
+APPLICATION=elkkweb_meteor
+if [ -d $PACKAGE_PRODUCTION_DIR ]
+then
+  echo "*** $APPLICATION env $PACKAGE found."
+fi
+
